@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sidebar menu With Sub-menus | Using HTML, CSS & JQuery</title>
+   <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+
+   <div class="menu-btn">
+     <i class="fas fa-bars"></i>
+   </div>
+   <div class="side-bar">
+     <div class="close-btn">
+       <i class="fas fa-times"></i>
+     </div>
+     <div class="menu">
+       <div class="item"><a href="#section-dashbord"><i class="fas fa-desktop"></i>Dashboard</a></div>
+
+   <div class="item">
+         <a class="sub-btn"><i class="fa fa-home"></i>Home Page<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#section-add-officer" class="sub-item">Add Officer</a>
+           <a href="#section-authorized-officers" class="sub-item">Authorized Officer</a>
+           <a href="#section-reported-accident" class="sub-item">Reported Accident</a>
+           <a href="#section-view-theft-cases-reported" class="sub-item">View Theft Cases Reported</a>
+           <a href="#section-view-shared-theft-cases" class="sub-item">View Shared Theft Cases</a>
+         </div>
+       </div>
+
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Officer in Charge<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#section-submit-transfer" class="sub-item">Submit Transfer</a>
+           <a href="#section-request-transfer" class="sub-item">Request Transfer</a>
+         </div>
+       </div>
+
+        <div class="item">
+         <a class="sub-btn"><i class="fa fa-folder"></i>Pending Transfer<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#section-transfer-to-station" class="sub-item">Transfer To Station</a>
+           <a href="#section-transfer-out-of-station" class="sub-item">Transfer Out Of Station</a>
+         </div>
+       </div>
+
+    
+
+     <div class="item">
+         <a class="sub-btn"><i class="fa fa-cogs"></i>Utilities<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#section-update-profile" class="sub-item">Update Profile</a>
+           <a href="#section-support" class="sub-item">Support</a>
+           <a href="#"class="sub-item">Logout</a>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!--main-->
+   <section class="main">
+
+    <!--Dashbord here-->
+      <div id="section-dashbord" class="tab-content">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+
+
+    <!--Home Page here-->
+
+
+
+     <div id="section-add-officer" class="tab-content">
+       <!--Add Officer-->
+<!--card-->
+
+<div class="card">
+  <div class="card-body">
+
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Add Officer</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    
+    <div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Enter Full Name" />
+</div> 
+<div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Enter ID Number/Service Number" />
+</div>
+ <div class="form-outline">
+   <input type="text" id="tel" class="form-control" placeholder="Enter Phone Number" />
+</div>
+    <a href="#" class="btn btn-primary" style="margin-left: 10px;">Submit</a>
+  </div>
+</div>
+
+<!--card-->
+</div>
+
+
+<!--Authorized officers-->
+<!--Title Media and Actions Card -->
+<div id="section-authorized-officers" class="tab-content" >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Authorized Officer</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Full Names</th>
+            <th>Phone Number</th>
+            <th>ID/Service Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+<!--Reported Accident-->
+<div id="section-reported-accident" class="tab-content" >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Reported Accident</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Reg/ Vin Number</th>
+            <th>Case Reported By</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>KB571</td>
+            <td> Clark Kent</td>
+            <td>0792287676</td>
+        </tr>
+        <tr>
+            <td>2</td>
+             <td>KB4571</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+        </tr>
+        <tr>
+            <td>3</td>
+             <td>KB5571</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+<!--View Theft Cases Reported-->
+<div id="section-view-theft-cases-reported" class="tab-content" >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">View Theft Cases Reported</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+
+    <div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Find Nearest Police Station" />
+</div>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Reg/ Vin Number</th>
+            <th>Reported By</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>KB571</td>
+            <td> Clark Kent</td>
+            <td>0792287676</td>
+        </tr>
+        <tr>
+            <td>2</td>
+             <td>KB4571</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+        </tr>
+        <tr>
+            <td>3</td>
+             <td>KB5571</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+<!--View Shared Theft Cases-->
+<div id="section-view-shared-theft-cases" class="tab-content" >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">View Shared Theft Cases</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Reg/ Vin Number</th>
+            <th>Shared By</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>KB571</td>
+            <td> Clark Kent</td>
+            <td>0792287676</td>
+        </tr>
+        <tr>
+            <td>2</td>
+             <td>KB4571</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+        </tr>
+        <tr>
+            <td>3</td>
+             <td>KB5571</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+    <!--Officer in Charge here-->
+<!--Submit Transfer-->  
+   <div id="section-submit-transfer" class="tab-content">
+<!--card-->
+<div class="card">
+  <div class="card-body">
+
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Submit Transfer</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    <p style="color: #000; font-size: 18px; margin-left: 10px; line-height: 1.6;">
+      
+  This transfer request will be sent to the selected station head for acceptance of the transfer.Once you click submit transfer you wil be logged out of mCarFix and can only login upon acceptance of your transfer request
+        
+        
+    </p>
+  <select class="form-control" id="sel1">
+        <option>Select Police Station</option>
+        <option>Pangani Police Station</option>
+        <option>Ruai Police Station</option>
+        <option>Thika Police Station</option>
+      </select>
+    <a href="#" class="btn btn-primary" style="margin-left: 10px;">Submit</a>
+  </div>
+</div>
+
+</div>
+<!--card-->
+
+<!--Request Transfer-->
+   <div id="section-request-transfer" class="tab-content">
+<!--card-->
+<div class="card">
+  <div class="card-body">
+
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Request Transfer</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    
+    <h2 class="card-title" style="color: #000; margin-left: 10px; font-size: 20px">Request Received</h2>  
+    <p style="color: #000; font-size: 18px; margin-left: 10px; line-height: 1.6;">
+      
+      This transfer request has been Received to the selected station head for acceptance of the transfer.
+        
+    </p>
+  <div class="progress" style="margin-left: 10px">
+  <div class="progress-bar" style="width:40%"></div>
+</div>
+
+  </div>
+</div>
+
+</div>
+<!--card-->
+
+    <!--Pending Transfer here-->
+    <!--Transfer To Station-->
+    <div id="section-transfer-to-station" class="tab-content" >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Transfer To Station</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+     <p style="color: #000; font-size: 18px; margin-left: 10px; line-height: 1.6;">
+      
+ Accepting a transfer allows the officer to access your station data on mCarFix.
+        
+    </p>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Full Names</th>
+            <th>Phone Number</th>
+            <th>ID/Service Number</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+<!--Transfer Out Of Station-->
+    <div id="section-transfer-out-of-station" class="tab-content" >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Transfer Out Of Station</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+     <p style="color: #000; font-size: 18px; margin-left: 10px; line-height: 1.6;">
+      
+ Accepting a transfer request will lock out the officer from accessing your station data on mCarFix.
+       
+    </p>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Full Names</th>
+            <th>Phone Number</th>
+            <th>ID/Service Number</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+    <!--Utilities here-->
+    <!--update profile-->
+     <div id="section-update-profile" class="tab-content">
+<!--card-->
+<div class="card">
+  <div class="card-body">
+
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Update Profile</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    
+ <div class="form-outline">
+   <input type="text" id="tel" class="form-control" placeholder="Enter Phone Number" />
+</div>
+
+  <div style="position:relative; margin: 20px">
+        <a class='btn btn-warning' href='javascript:;'>
+            Upload Image.
+            <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+        </a>
+        &nbsp;
+        <span class='label label-info' id="upload-file-info"></span>
+  </div>
+
+
+    <a href="#" class="btn btn-primary" style="margin-left: 20px;">Update Details</a>
+  </div>
+</div>
+
+</div>
+<!--card-->
+<!--Support-->
+   <div id="section-support" class="tab-content">
+<!--card-->
+
+<div class="card">
+  <div class="card-body">
+
+    <div class="card-body d-flex flex-row">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Support</h2>  
+        </div>
+        <img class="ml-3" src="mpolice.png"  width="112" height="112">
+    </div>
+    
+    <div class="form-outline">
+  <input name="name"  id="typeText" class="form-control" placeholder="Enter Full Name" />
+</div> 
+<div class="form-outline">
+  <input name="email" id="typeText" class="form-control" placeholder="Enter Email" />
+</div>
+ <div class="form-outline">
+  <textarea name="message" class="form-control" id="comment" placeholder="Message" style="width: 100%;height: 150px;line-height: 150%;resize:vertical;"></textarea>
+</div>
+    <a href="#" class="btn btn-primary" style="margin-left: 20px;">Submit</a>
+  </div>
+</div>
+
+<!--card-->
+</div>
+
+ 
+   </section>
+
+
+
+
+
+ </body>
+    <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+</html>
